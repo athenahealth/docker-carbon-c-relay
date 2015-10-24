@@ -10,6 +10,4 @@ RUN yum --assumeyes install \
     && yum --assumeyes clean all \
     && rm -rf /var/cache/yum/*
 
-VOLUME /etc/carbon-c-relay.conf
-
 CMD ["/usr/bin/carbon-c-relay"]
